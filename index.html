@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sktech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/sketch-tools.png">
+</head>
+
+<body>
+    <h1 id="heading">Etch a sktech</h1>
+    <div id="buttons">
+        <div>
+            <input type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)"/>
+        <button>  set size </button>
+    </div>
+        
+        <button id="reset"onclick="resetBoard()">🔄</button> 
+        <button  onclick="colorChoice('black')"         id="black" >Black</button> 
+        <button id="rgb" onclick="colorChoice('random')">rgb</button> 
+        <button  class="erasorButton"       onclick="colorChoice('white')">eraser</button>
+        
+    </div>
+    <div class="flex">
+    <div class="box">
+    </div>
+    </div>
+    <footer class="flex">
+        <p>
+            Copyright ©
+             Tanishk saini <a class="anchor"href="https://github.com/Tanishksaini"><i class="fa fa-github" style="font-size:24px"></i></a> </p>
+    </footer>
+<script src="./index.js"></script>
+</body>
+
+</html>
